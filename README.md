@@ -11,7 +11,21 @@ Por mais que temos um css global como mencionado na documentação oficial do [B
 
 ---
 
-## Contato
+## Estrutura do Projeto
+
+```plaintext
+projeto-iconst/
+├── index.html
+├── assets/
+│   |── icons
+│   └── images
+├── global.css
+├── README.md
+```
+
+---
+
+### Contato
 
 Para mais informações, sinta-se à vontade para entrar em contato:
 
