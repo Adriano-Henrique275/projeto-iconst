@@ -1,3 +1,39 @@
 .dropdown-toggle::after {
   display: none !important;
 }
+
+.placeholder-text-color::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #fff;
+}
+.placeholder-text-color:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #fff;
+ opacity:  1;
+}
+.placeholder-text-color::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #fff;
+ opacity:  1;
+}
+.placeholder-text-color:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #fff;
+}
+
+/* Classe personalizada para remover o outline e box-shadow no foco */
+.no-focus-outline:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px; 
+  left: 30%; 
+  transform: translateX(-50%); 
+  border-width: 0 10px 10px 10px; 
+  border-style: solid;
+  border-color: transparent transparent #343a40 transparent; 
+}
+
+.dropdown-menu {
+  margin-top: 10px; /
+}

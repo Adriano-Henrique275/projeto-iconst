@@ -27,7 +27,7 @@
     <title>Iconst</title>
   </head>
   <body style="background-color: #dfe0df">
-    <div class="container-lg">
+    <div class="container">
       <nav
         class="navbar navbar-expand-lg"
         id="navbar"
@@ -42,7 +42,7 @@
             />
           </a>
           <div
-            class="input-group w-auto"
+            class="input-group w-50"
             style="
               background: #dfe0df;
               border: solid 2px #dfe0df;
@@ -59,7 +59,7 @@
             </span>
             <input
               type="text"
-              class="form-control border-0 bg-transparent"
+              class="form-control border-0 bg-transparent no-focus-outline"
               style="color: #27283a; font-weight: 500"
               placeholder="Buscar produtos, marcas e muito mais..."
             />
@@ -123,7 +123,7 @@
                   >Categorias
                   <img
                     src="/assets/icons/setabaixo.svg"
-                    alt=""
+                    alt="seta de indicação"
                     style="width: 15px; height: 15px"
                 /></a>
                 <ul class="dropdown-menu" style="background-color: #27283a">
@@ -217,22 +217,27 @@
           class="input-group"
           style="
             border: solid 2px #dfe0df;
-            border-top-left-radius: 0.5rem;
+            border-top-left-radius: 1rem;
             border-bottom-right-radius: 1rem;
             max-width: 30%;
             margin-left: 100px;
           "
         >
           <span
-            class="input-group-text"
-            style="background: #27283a; color: #fff"
+            class="input-group-text rounded-0 border-0"
+            style="
+              background-color: #27283a;
+              color: #fff;
+              border-top-left-radius: 1rem !important;
+              border-bottom-right-radius: 1rem;
+            "
           >
             Informe seu CEP
           </span>
           <input
+            style="color: #fff !important"
             type="text"
-            style="font-weight: 500"
-            class="form-control border-0 bg-transparent ps-2"
+            class="form-control border-0 bg-transparent ps-2 no-focus-outline placeholder-text-color"
             placeholder="Ex: 111223234"
           />
         </div>
@@ -466,6 +471,7 @@
           data-bs-ride="teste"
           id="teste"
         >
+          <!-- Card de produtos -->
           <div class="row justify-content-evenly">
             <div
               class="card rounded-0"
@@ -477,11 +483,11 @@
             >
               <img
                 src="/assets/images/argamassa.png"
-                class="card-img-top p-3 w-100"
-                style="border-top-left-radius: 1.5rem !important"
+                class="card-img-top"
+                style="border-top-left-radius: 1.5rem !important; width: 150px"
                 alt="imagem de argamassa"
               />
-              <div class="card-body p-2">
+              <div class="card-body">
                 <h5 class="card-title">R$ 16,90</h5>
                 <p class="card-text">
                   Argamassa Reboco Alvenaria 20kg Cinza - VitalMassa
@@ -489,7 +495,7 @@
               </div>
             </div>
             <div
-              class="card rounded-0"
+              class="card"
               style="
                 width: 10rem;
                 border-top-left-radius: 2rem !important;
@@ -498,11 +504,11 @@
             >
               <img
                 src="/assets/images/rejunte.png"
-                class="card-img-top p-3 img-fluid w-100 pt-5"
-                style="border-top-left-radius: 1.5rem !important; height: 140px"
+                class="card-img-top"
+                style="border-top-left-radius: 1.5rem !important; height: 100px"
                 alt="imagem de rejunte"
               />
-              <div class="card-body p-2">
+              <div class="card-body">
                 <h5 class="card-title">R$ 129,00</h5>
                 <p class="card-text">
                   Rejunte Epóxi Porcelanato Marfim Caixa 1kg - Portokoll
@@ -510,7 +516,7 @@
               </div>
             </div>
             <div
-              class="card rounded-0"
+              class="card"
               style="
                 width: 10rem;
                 border-top-left-radius: 2rem !important;
@@ -519,11 +525,11 @@
             >
               <img
                 src="./assets/images/dobradica.png"
-                class="card-img-top p-3 img-fluid h-50 w-100"
-                style="border-top-left-radius: 1.5rem !important"
+                class="card-img-top"
+                style="border-top-left-radius: 1.5rem !important; height: 110px"
                 alt="imagem de drobradiça"
               />
-              <div class="card-body p-2">
+              <div class="card-body">
                 <h5 class="card-title">R$ 31,90</h5>
                 <p class="card-text">
                   Dobradiça de Canto Ferro 3.1/2 x 25/16 3 Unidades preto Stam
@@ -531,7 +537,7 @@
               </div>
             </div>
             <div
-              class="card rounded-0"
+              class="card"
               style="
                 width: 10rem;
                 border-top-left-radius: 2rem !important;
@@ -540,7 +546,7 @@
             >
               <img
                 src="./assets/images/kit-pintura.png"
-                class="card-img-top p-3 img-fluid"
+                class="card-img-top"
                 style="
                   border-top-left-radius: 1.5rem !important;
                   width: 100%;
@@ -548,7 +554,7 @@
                 "
                 alt="imagem de kit de pintura"
               />
-              <div class="card-body p-2">
+              <div class="card-body">
                 <h5 class="card-title">R$ 59,90</h5>
                 <p class="card-text">
                   Kit de Pintura Multiuso 5 Peças Azul - Tigre
@@ -605,7 +611,7 @@
             </span>
             <input
               type="text"
-              class="form-control border-0 bg-transparent"
+              class="form-control border-0 bg-transparent no-focus-outline"
               style="color: #27283a; font-weight: 500"
               placeholder="Tire aqui suas dúvidas"
             />
